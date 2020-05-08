@@ -1,71 +1,70 @@
-import json
+import datetime
 
-import requests as re
-from dateutil.parser import parse
+import pandas as pd
+from main_modules.modules import browser
 
-from bs4 import BeautifulSoup
-
-georgia_health = re.get("https://dph.georgia.gov/covid-19-daily-status-report")
-georgia_health_html = georgia_health.text
-corona_soup = BeautifulSoup(georgia_health_html, "lxml")
-
-# print(corona_soup.prettify())
+# from pandas.plotting import table
 
 
-class CoCo:
-    def __init__(self):
-        self.headline = None
-        self.headline_details = None
-        self.date_published = None
-        self.confirm_case, self.Testing_by_Lab, self.confirmed_cases_by_county = (
-            [],
-            [],
-            [],
+today = datetime.datetime.now()
+browser.get("https://dph.georgia.gov/covid-19-daily-status-report")
+iframe = browser.find_element_by_tag_name("iframe")
+browser.switch_to.frame(iframe)
+browser.implicitly_wait(3)
+
+
+def get_deaths_in_georgia():
+    deaths_in_georgia = browser.find_element_by_xpath('//*[@id="react-tabs-8"]')
+    deaths_in_georgia.click()
+    browser.implicitly_wait(2)
+    deaths_in_georgia_html = browser.find_element_by_xpath(
+        '//*[@id="TopContainer"]/div/div/div/div[4]'
+    ).get_attribute("innerHTML")
+    return pd.read_html(deaths_in_georgia_html)[0]
+
+
+def get_covid_status():
+    data = {}
+    df = pd.DataFrame(
+        columns=[
+            "DateTime",
+            "TotalTest",
+            "ConfirmedCases",
+            "ICU Admissions",
+            "Hospitalized",
+            "Deaths",
+        ]
+    )
+    ace = browser.find_elements_by_css_selector("#KPI1")
+    data["DateTime"] = today
+    for i in range(len(ace) - 1):
+        data["TotalTest"] = (
+            ace[i].find_element_by_xpath('//*[@id="KPI1"]/div[1]/div/p').text
         )
+        data["ConfirmedCases"] = (
+            ace[i].find_element_by_xpath('//*[@id="KPI1"]/div[2]/p').text
+        )
+        data["ICU Admissions"] = (
+            ace[i].find_element_by_xpath('//*[@id="KPI1"]/div[3]/p').text
+        )
+        data["Hospitalized"] = (
+            ace[i].find_element_by_xpath('//*[@id="KPI1"]/div[4]/p').text
+        )
+        data["Deaths"] = ace[i].find_element_by_xpath('//*[@id="KPI1"]/div[5]/p').text
+        df = df.append(data, ignore_index=True)
+    return df
 
-    def header_details(self):
-        global header
-        scripts = corona_soup.find_all("script")
-        print(len(scripts))
-        for script in scripts:
-            if "Article" in script.text:
-                header = json.loads(str(script.text))
-        article = header["@graph"][0]
-        self.headline = article["headline"]
-        self.headline_details = article["description"]
-        self.date_published = parse(article["dateModified"])  # strftime('%m-%d-%y')
-        print(self.headline)
-        print(self.headline_details)
-        print(self.date_published)
 
-    def get_confirm_cases(self):
-        soup2 = corona_soup.find_all("tbody")
-        list_items = [i.text for i in soup2]
-        [
-            y.append(x.split("\n"))
-            for x, y in zip(
-                list_items,
-                [
-                    self.confirm_case,
-                    self.Testing_by_Lab,
-                    self.confirmed_cases_by_county,
-                ],
-            )
-        ]
-        self.confirm_case = self.confirm_case[0][: len(self.confirm_case[0]) - 1]
-        self.Testing_by_Lab = self.Testing_by_Lab[0][: len(self.Testing_by_Lab[0]) - 1]
-        self.confirmed_cases_by_county = self.confirmed_cases_by_county[0][
-            : len(self.confirmed_cases_by_county[0]) - 1
-        ]
-        print(self.confirm_case)
-        print(self.Testing_by_Lab)
-        print(self.confirmed_cases_by_county)
-
-    def run(self):
-        self.header_details()
-        self.get_confirm_cases()
+def run():
+    get_covid_status().to_csv(
+        r"C:\Users\Nastracha\OneDrive\Desktop\corona_data\covid_status.csv", index=False
+    )
+    get_deaths_in_georgia().to_csv(
+        r"C:\Users\Nastracha\OneDrive\Desktop\corona_data\covid_deaths_details.csv",
+        index=False,
+    )
 
 
 if __name__ == "__main__":
-    src = CoCo()
-    src.run()
+    run()
+    browser.close()

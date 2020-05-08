@@ -1,0 +1,15 @@
+{
+  "Elements": {
+    "grid_1": "//*[@id=\"cont1\"]/table[1]/tbody",
+    "grid_2": "//*[@id=\"cont1\"]/table[2]/tbody"
+  },
+  "Driver": {
+    "Chrome_driver": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\Selenium browser drivers\\chromedriver_win32\\chromedriver.exe"
+  },
+  "URL": {
+    "GA_dept_health": "https://dph.georgia.gov/covid-19-daily-status-report"
+  }
+}
+
+
+
