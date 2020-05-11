@@ -1,7 +1,13 @@
 {
   "Elements": {
-    "grid_1": "//*[@id=\"cont1\"]/table[1]/tbody",
-    "grid_2": "//*[@id=\"cont1\"]/table[2]/tbody"
+    "georgia_death_tab": "//*[@id=\"react-tabs-8\"]",
+    "georgia_deaths_html": "//*[@id=\"TopContainer\"]/div/div/div/div[4]",
+    "covid_status_grid_elem": "#KPI1",
+    "TotalTest_elem": "//*[@id=\"KPI1\"]/div[1]/div/p",
+    "ConfirmedCases_elem": "//*[@id=\"KPI1\"]/div[2]/p",
+    "ICU_Admissions_elem": "//*[@id=\"KPI1\"]/div[3]/p",
+    "Hospitalized_elem": "//*[@id=\"KPI1\"]/div[4]/p",
+    "Deaths_elem": "//*[@id=\"KPI1\"]/div[5]/p"
   },
   "Driver": {
     "Chrome_driver": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\Selenium browser drivers\\chromedriver_win32\\chromedriver.exe"

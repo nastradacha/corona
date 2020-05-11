@@ -1,7 +1,4 @@
 import json
-import os
-import datetime
-from dateutil import *
 #
 # # x = datetime.datetime.strptime("Apr 7, 2020", '%M-%d-%y').strftime('%m/%d/%y')
 # year = datetime.date.today().year
@@ -44,5 +41,11 @@ chrome_driver = config["Driver"]["Chrome_driver"]
 # chrome_driver = chrome_driver
 
 # Page Elements xpath
-grid_1 = config["Elements"]["grid_1"]
-grid_2 = config["Elements"]["grid_2"]
+georgia_death_tab = config["Elements"]["georgia_death_tab"]
+georgia_deaths_html = config["Elements"]["georgia_deaths_html"]
+covid_status_grid_elem = config["Elements"]["covid_status_grid_elem"]
+TotalTest_elem = config["Elements"]["TotalTest_elem"]
+ConfirmedCases_elem = config["Elements"]["ConfirmedCases_elem"]
+ICU_Admissions_elem = config["Elements"]["ICU_Admissions_elem"]
+Hospitalized_elem = config["Elements"]["Hospitalized_elem"]
+Deaths_elem = config["Elements"]["Deaths_elem"]

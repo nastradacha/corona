@@ -17,6 +17,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 # self.chrome_options.add_argument('--ignore-certificate-errors')
 # self.browser = webdriver.Chrome(options=self.chrome_options)
 
+
 def browser():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--window-size=1920,1080")
@@ -26,10 +27,10 @@ def browser():
     chrome_options.add_argument("--proxy-server='direct://'")
     chrome_options.add_argument("--proxy-bypass-list=*")
     chrome_options.add_argument("--start-maximized")
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--ignore-certificate-errors')
-    chrome_options.add_argument('--headless')
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--ignore-certificate-errors")
+    chrome_options.add_argument("--headless")
     # initiate Chrome browser
     driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
     driver.set_window_position(0, 0)
@@ -51,6 +52,3 @@ wait = WebDriverWait(browser, 10)
 #     except NoSuchElementException:
 #         return False
 #     return True
-
-
-
