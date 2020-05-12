@@ -14,8 +14,14 @@
   },
   "URL": {
     "GA_dept_health": "https://dph.georgia.gov/covid-19-daily-status-report"
+  },
+  "file_paths": {
+    "covid_status_csv": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.csv",
+    "covid_status_html": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.html",
+    "covid_status_pdf": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.pdf"
   }
 }
+
 
 
 

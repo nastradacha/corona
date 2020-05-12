@@ -1,15 +1,10 @@
 import datetime
-import matplotlib.pyplot as plt
 import pandas as pd
 from configs.config import *
 from configs.config import ga_dept_health, georgia_death_tab, georgia_deaths_html
-from main_modules.modules import browser
+from main_modules.modules import browser, check_exists_by_xpath
 from PIL import Image
 from io import BytesIO
-import urllib
-from time import sleep
-from pathlib import Path
-from selenium.webdriver import ActionChains
 from whatsapp import send_to_phone
 
 pd.options.display.max_columns = None
@@ -70,53 +65,64 @@ def get_covid_status():
     return df
 
 
-def run():
-    status_df = get_covid_status()
+def save_covid_status_to_csv_and_html(
+    covid_status_df, csv_status_path, html_status_path
+):
+    status_df = covid_status_df
     df_appended_to_exicting_file = status_df.append(csv_df, ignore_index=True)
-    df_appended_to_exicting_file.to_csv(
-        r"C:\Users\Nastracha\OneDrive\Desktop\corona_data\covid_status.csv", index=False
-    )
-    df_appended_to_exicting_file.to_html("tester.html")
-    # html = df_appended_to_exicting_file.to_html()
+    df_appended_to_exicting_file.to_csv(csv_status_path, index=False)
+    df_appended_to_exicting_file.to_html(html_status_path)
 
-    # html = '/tester.html'
 
-    get_deaths_in_georgia().to_csv(
-        r"C:\Users\Nastracha\OneDrive\Desktop\corona_data\covid_deaths_details.csv",
-        index=False,
-    )
-    # This does not change focus to the new window for the driver.
+def convert_html_to_pdf(pdf_status_path, html_status_path):
     browser.execute_script("window.open('');")
     # sleep(3)
     # Switch to the new window
     browser.switch_to.window(browser.window_handles[1])
-    browser.get(r"C:\Users\Nastracha\projects\corona\tester.html")
+    browser.get(html_status_path)
     browser.implicitly_wait(5)
     img = Image.open(
         BytesIO(browser.find_element_by_tag_name("table").screenshot_as_png)
     )
     rgb = Image.new("RGB", img.size, (255, 255, 255))  # white backgroung
     rgb.paste(img, mask=img.split()[3])  # paste using alpha channel as mask
-    rgb.save("filename.pdf", "PDF", quality=100)
+    rgb.save(pdf_status_path, "PDF", quality=100)
     # get_deaths_in_georgia().plot(kind='bar')
     # plt.show()
+
+
+def convert_pdf_to_url(pdf_status_path):
     browser.execute_script("window.open('');")
     browser.switch_to.window(browser.window_handles[2])
     browser.get("https://filebin.net/")
     browser.implicitly_wait(3)
-    current_dir = str(Path(__file__).parent) + r"\filename.pdf"
+    # current_dir = str(Path(__file__).parent) + pdf_status_path
+    current_dir = pdf_status_path
     print(current_dir)
     file_uploader = browser.find_element_by_css_selector("#fileField")
     file_uploader.send_keys(current_dir)
-    url_page = browser.find_element_by_css_selector(
+    asd = check_exists_by_xpath(
+        "#fileDrop > div.container-fluid > table > tbody:nth-child(2) > tr > td:nth-child(1) > a"
+    )
+    print(asd)
+    return browser.find_element_by_css_selector(
         "#fileDrop > div.container-fluid > table > tbody:nth-child(2) > tr > td:nth-child(1) > a"
     ).get_attribute("href")
-    print(url_page)
 
-    send_to_phone(url_page)
-    #
-    #
-    # sleep(10)
+
+def run():
+    save_covid_status_to_csv_and_html(
+        get_covid_status(), covid_status_csv, covid_status_html
+    )
+    get_deaths_in_georgia().to_csv(
+        r"C:\Users\Nastracha\OneDrive\Desktop\corona_data\covid_deaths_details.csv",
+        index=False,
+    )
+
+    convert_html_to_pdf(covid_status_pdf, covid_status_html)
+    url_to_pdf = convert_pdf_to_url(covid_status_pdf)
+
+    send_to_phone(url_to_pdf)
 
 
 if __name__ == "__main__":

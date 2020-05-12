@@ -30,7 +30,7 @@ def browser():
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--ignore-certificate-errors")
-    chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--headless")
     # initiate Chrome browser
     driver = webdriver.Chrome(executable_path=chrome_driver, options=chrome_options)
     driver.set_window_position(0, 0)
@@ -46,9 +46,9 @@ wait = WebDriverWait(browser, 10)
 # options.add_argument('window-size=1200x600')  # optional
 
 
-# def check_exists_by_xpath(css):
-#     try:
-#         browser.find_element_by_css_selector(css)
-#     except NoSuchElementException:
-#         return False
-#     return True
+def check_exists_by_xpath(css):
+    try:
+        browser.find_element_by_css_selector(css)
+    except NoSuchElementException:
+        return False
+    return True
