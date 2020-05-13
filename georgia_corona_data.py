@@ -45,22 +45,18 @@ def get_covid_status():
             "Deaths",
         ]
     )
-    covid_status_grid = browser.find_elements_by_css_selector(covid_status_grid_elem)
+    covid_status_grid = browser.find_elements_by_xpath(covid_status_grid_elem)
     data["DateTime"] = today
-    for i in range(len(covid_status_grid) - 1):
-        data["TotalTest"] = (
-            covid_status_grid[i].find_element_by_xpath(TotalTest_elem).text
-        )
-        data["ConfirmedCases"] = (
-            covid_status_grid[i].find_element_by_xpath(ConfirmedCases_elem).text
-        )
-        data["ICU Admissions"] = (
-            covid_status_grid[i].find_element_by_xpath(ICU_Admissions_elem).text
-        )
-        data["Hospitalized"] = (
-            covid_status_grid[i].find_element_by_xpath(Hospitalized_elem).text
-        )
-        data["Deaths"] = covid_status_grid[i].find_element_by_xpath(Deaths_elem).text
+    for elements in covid_status_grid:
+        data["TotalTest"] = elements.find_element_by_xpath(TotalTest_elem).text
+        data["ConfirmedCases"] = elements.find_element_by_xpath(
+            ConfirmedCases_elem
+        ).text
+        data["ICU Admissions"] = elements.find_element_by_xpath(
+            ICU_Admissions_elem
+        ).text
+        data["Hospitalized"] = elements.find_element_by_xpath(Hospitalized_elem).text
+        data["Deaths"] = elements.find_element_by_xpath(Deaths_elem).text
         df = df.append(data, ignore_index=True)
     return df
 
@@ -69,6 +65,7 @@ def save_covid_status_to_csv_and_html(
     covid_status_df, csv_status_path, html_status_path
 ):
     status_df = covid_status_df
+    print(status_df)
     df_appended_to_exicting_file = status_df.append(csv_df, ignore_index=True)
     df_appended_to_exicting_file.to_csv(csv_status_path, index=False)
     df_appended_to_exicting_file.to_html(html_status_path)
@@ -101,13 +98,12 @@ def convert_pdf_to_url(pdf_status_path):
     print(current_dir)
     file_uploader = browser.find_element_by_css_selector("#fileField")
     file_uploader.send_keys(current_dir)
-    asd = check_exists_by_xpath(
-        "#fileDrop > div.container-fluid > table > tbody:nth-child(2) > tr > td:nth-child(1) > a"
-    )
+    browser.implicitly_wait(5)
+    asd = check_exists_by_xpath(GA_status_url_link)
     print(asd)
-    return browser.find_element_by_css_selector(
-        "#fileDrop > div.container-fluid > table > tbody:nth-child(2) > tr > td:nth-child(1) > a"
-    ).get_attribute("href")
+    return browser.find_element_by_css_selector(GA_status_url_link).get_attribute(
+        "href"
+    )
 
 
 def run():
@@ -115,8 +111,7 @@ def run():
         get_covid_status(), covid_status_csv, covid_status_html
     )
     get_deaths_in_georgia().to_csv(
-        r"C:\Users\Nastracha\OneDrive\Desktop\corona_data\covid_deaths_details.csv",
-        index=False,
+        covid_death_detail_csv, index=False,
     )
 
     convert_html_to_pdf(covid_status_pdf, covid_status_html)
