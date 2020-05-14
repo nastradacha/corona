@@ -68,7 +68,21 @@ def save_covid_status_to_csv_and_html(
     print(status_df)
     df_appended_to_exicting_file = status_df.append(csv_df, ignore_index=True)
     df_appended_to_exicting_file.to_csv(csv_status_path, index=False)
-    df_appended_to_exicting_file.to_html(html_status_path)
+    table = df_appended_to_exicting_file.to_html()
+    with open(html_status_path, "w") as f:
+        css_sample = f"""
+<html>
+    <head>
+        <title> Georgia COVID-19 Updated Data</title>
+        <link rel="stylesheet" href='C://Users//Nastracha//OneDrive//Desktop//corona_data//css//materialize.min.css'>
+    </head>
+    {table}
+</html>"""
+        f.write(
+            css_sample.format(
+                table=df_appended_to_exicting_file.to_html(classes=["striped", "centered", "highlight"])
+            )
+        )
 
 
 def convert_html_to_pdf(pdf_status_path, html_status_path):

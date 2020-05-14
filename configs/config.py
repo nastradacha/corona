@@ -32,9 +32,12 @@ ConfirmedCases_elem = config["Elements"]["ConfirmedCases_elem"]
 ICU_Admissions_elem = config["Elements"]["ICU_Admissions_elem"]
 Hospitalized_elem = config["Elements"]["Hospitalized_elem"]
 Deaths_elem = config["Elements"]["Deaths_elem"]
+GA_status_url_link = config["Elements"]["GA_status_url_link"]
 
 
 # File paths
 covid_status_csv = config["file_paths"]["covid_status_csv"]
 covid_status_html = config["file_paths"]["covid_status_html"]
 covid_status_pdf = config["file_paths"]["covid_status_pdf"]
+covid_death_detail_csv = config["file_paths"]["covid_death_detail_csv"]
+

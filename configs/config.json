@@ -1,13 +1,14 @@
 {
   "Elements": {
-    "georgia_death_tab": "//*[@id=\"react-tabs-8\"]",
+    "georgia_death_tab": "//*[@id=\"react-tabs-10\"]",
     "georgia_deaths_html": "//*[@id=\"TopContainer\"]/div/div/div/div[4]",
-    "covid_status_grid_elem": "#KPI1",
+    "covid_status_grid_elem": "//*[@id=\"KPI1\"][2]",
     "TotalTest_elem": "//*[@id=\"KPI1\"]/div[1]/div/p",
     "ConfirmedCases_elem": "//*[@id=\"KPI1\"]/div[2]/p",
     "ICU_Admissions_elem": "//*[@id=\"KPI1\"]/div[3]/p",
     "Hospitalized_elem": "//*[@id=\"KPI1\"]/div[4]/p",
-    "Deaths_elem": "//*[@id=\"KPI1\"]/div[5]/p"
+    "Deaths_elem": "//*[@id=\"KPI1\"]/div[5]/p",
+    "GA_status_url_link": "#fileDrop > div.container-fluid > table > tbody:nth-child(2) > tr > td:nth-child(1) > a"
   },
   "Driver": {
     "Chrome_driver": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\Selenium browser drivers\\chromedriver_win32\\chromedriver.exe"
@@ -18,7 +19,8 @@
   "file_paths": {
     "covid_status_csv": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.csv",
     "covid_status_html": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.html",
-    "covid_status_pdf": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.pdf"
+    "covid_status_pdf": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.pdf",
+    "covid_death_detail_csv": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_death_detail.csv"
   }
 }
 
