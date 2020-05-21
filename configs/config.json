@@ -11,19 +11,15 @@
     "GA_status_url_link": "#fileDrop > div.container-fluid > table > tbody:nth-child(2) > tr > td:nth-child(1) > a"
   },
   "Driver": {
-    "Chrome_driver": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\Selenium browser drivers\\chromedriver_win32\\chromedriver.exe"
+    "Chrome_driver": "OneDrive/Desktop/Selenium browser drivers/chromedriver_win32/chromedriver.exe"
   },
   "URL": {
     "GA_dept_health": "https://dph.georgia.gov/covid-19-daily-status-report"
   },
   "file_paths": {
-    "covid_status_csv": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.csv",
-    "covid_status_html": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.html",
-    "covid_status_pdf": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_status.pdf",
-    "covid_death_detail_csv": "C:\\Users\\Nastracha\\OneDrive\\Desktop\\corona_data\\covid_death_detail.csv"
+    "covid_status_csv": "OneDrive/Desktop/corona_data/covid_status.csv",
+    "covid_status_html": "OneDrive/Desktop/corona_data/covid_status.html",
+    "covid_status_pdf": "OneDrive/Desktop/corona_data/covid_status.pdf",
+    "covid_death_detail_csv": "OneDrive/Desktop/corona_data/covid_death_detail.csv"
   }
 }
-
-
-
-

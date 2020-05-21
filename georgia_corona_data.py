@@ -1,19 +1,21 @@
 import datetime
-import pandas as pd
-from configs.config import *
-from configs.config import ga_dept_health, georgia_death_tab, georgia_deaths_html
-from main_modules.modules import browser, check_exists_by_xpath
-from PIL import Image
 from io import BytesIO
+from time import sleep
+
+import pandas as pd
+from PIL import Image
+
+from configs.config import Elements, File_Path, ga_dept_health
+from main_modules.modules import browser, check_exists_by_xpath
 from whatsapp import send_to_phone
+
+# from pandas.plotting import table
 
 pd.options.display.max_columns = None
 pd.options.display.max_rows = None
-pdf_file = "/tmp/demo.pdf"
-# from pandas.plotting import table
-csv_df = pd.read_csv(
-    r"C:\Users\Nastracha\OneDrive\Desktop\corona_data\covid_status.csv"
-)
+# pdf_file = "/tmp/demo.pdf"
+
+csv_df = pd.read_csv(File_Path.covid_status_csv)
 
 
 today = datetime.datetime.now().strftime("%Y-%m-%d %I:%M %p")
@@ -24,11 +26,11 @@ browser.implicitly_wait(3)
 
 
 def get_deaths_in_georgia():
-    deaths_in_georgia = browser.find_element_by_xpath(georgia_death_tab)
+    deaths_in_georgia = browser.find_element_by_xpath(Elements.georgia_death_tab)
     deaths_in_georgia.click()
     browser.implicitly_wait(2)
     deaths_in_georgia_html = browser.find_element_by_xpath(
-        georgia_deaths_html
+        Elements.georgia_deaths_html
     ).get_attribute("innerHTML")
     return pd.read_html(deaths_in_georgia_html)[0]
 
@@ -45,18 +47,20 @@ def get_covid_status():
             "Deaths",
         ]
     )
-    covid_status_grid = browser.find_elements_by_xpath(covid_status_grid_elem)
+    covid_status_grid = browser.find_elements_by_xpath(Elements.covid_status_grid_elem)
     data["DateTime"] = today
     for elements in covid_status_grid:
-        data["TotalTest"] = elements.find_element_by_xpath(TotalTest_elem).text
+        data["TotalTest"] = elements.find_element_by_xpath(Elements.TotalTest_elem).text
         data["ConfirmedCases"] = elements.find_element_by_xpath(
-            ConfirmedCases_elem
+            Elements.ConfirmedCases_elem
         ).text
         data["ICU Admissions"] = elements.find_element_by_xpath(
-            ICU_Admissions_elem
+            Elements.ICU_Admissions_elem
         ).text
-        data["Hospitalized"] = elements.find_element_by_xpath(Hospitalized_elem).text
-        data["Deaths"] = elements.find_element_by_xpath(Deaths_elem).text
+        data["Hospitalized"] = elements.find_element_by_xpath(
+            Elements.Hospitalized_elem
+        ).text
+        data["Deaths"] = elements.find_element_by_xpath(Elements.Deaths_elem).text
         df = df.append(data, ignore_index=True)
     return df
 
@@ -80,16 +84,19 @@ def save_covid_status_to_csv_and_html(
 </html>"""
         f.write(
             css_sample.format(
-                table=df_appended_to_exicting_file.to_html(classes=["striped", "centered", "highlight"])
+                table=df_appended_to_exicting_file.to_html(
+                    classes=["striped", "centered", "highlight"]
+                )
             )
         )
 
 
 def convert_html_to_pdf(pdf_status_path, html_status_path):
     browser.execute_script("window.open('');")
-    # sleep(3)
+    sleep(3)
     # Switch to the new window
     browser.switch_to.window(browser.window_handles[1])
+    print("this is it", html_status_path)
     browser.get(html_status_path)
     browser.implicitly_wait(5)
     img = Image.open(
@@ -113,23 +120,23 @@ def convert_pdf_to_url(pdf_status_path):
     file_uploader = browser.find_element_by_css_selector("#fileField")
     file_uploader.send_keys(current_dir)
     browser.implicitly_wait(5)
-    asd = check_exists_by_xpath(GA_status_url_link)
-    print(asd)
-    return browser.find_element_by_css_selector(GA_status_url_link).get_attribute(
-        "href"
-    )
+    if check_exists_by_xpath(Elements.GA_status_url_link) is False:
+        browser.implicitly_wait(5)
+    return browser.find_element_by_css_selector(
+        Elements.GA_status_url_link
+    ).get_attribute("href")
 
 
 def run():
     save_covid_status_to_csv_and_html(
-        get_covid_status(), covid_status_csv, covid_status_html
+        get_covid_status(), File_Path.covid_status_csv, File_Path.covid_status_html
     )
     get_deaths_in_georgia().to_csv(
-        covid_death_detail_csv, index=False,
+        File_Path.covid_death_detail_csv, index=False,
     )
 
-    convert_html_to_pdf(covid_status_pdf, covid_status_html)
-    url_to_pdf = convert_pdf_to_url(covid_status_pdf)
+    convert_html_to_pdf(File_Path.covid_status_pdf, File_Path.covid_status_html)
+    url_to_pdf = convert_pdf_to_url(File_Path.covid_status_pdf)
 
     send_to_phone(url_to_pdf)
 

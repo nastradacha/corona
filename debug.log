@@ -1,3 +1,6 @@
 [0424/175417.186:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
 [0424/175448.925:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
 [0424/175627.538:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0515/131413.330:ERROR:file_io_win.cc(161)] CreateFile C:\Users\NASTRA~1\AppData\Local\Temp\scoped_dir5104_1411546584\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0515/131413.331:ERROR:file_io_win.cc(170)] CreateFile C:\Users\NASTRA~1\AppData\Local\Temp\scoped_dir5104_1411546584\Crashpad\reports\b1141681-be86-4414-ba1b-05fc48a30b65.dmp: The system cannot find the path specified. (0x3)
+[0515/131413.332:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
