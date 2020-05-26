@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/fb_test.py" line="21" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="cc50abb7-d086-4e94-8de7-10cada9a67f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/georgia_corona_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/georgia_corona_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_modules/modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_modules/modules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/whatsapp.py" afterDir="false" />
     </list>
-    <ignored path="C:\Users\Nastracha\projects\corona\.idea\shelf/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="339" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,72 +28,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/georgia_corona_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="112" column="70" lean-forward="true" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/whatsapp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_modules/modules.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fb_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configs/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="22" column="83" lean-forward="true" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configs/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,50 +57,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Twillo.py" />
-        <option value="$PROJECT_DIR$/main_modules/pdf.py" />
-        <option value="$PROJECT_DIR$/whatsapp.py" />
-        <option value="$PROJECT_DIR$/fb_test.py" />
-        <option value="$PROJECT_DIR$/georgia_corona_data.py" />
-        <option value="$PROJECT_DIR$/main_modules/modules.py" />
-        <option value="$PROJECT_DIR$/configs/config.json" />
-        <option value="$PROJECT_DIR$/configs/config.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1929" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
-  </component>
+  <component name="ProjectId" id="1cEoVJ73hU3qG6mMUT4s9flbG93" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="corona" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corona" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corona" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corona" type="462c0819:PsiDirectoryNode" />
-              <item name="configs" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -184,19 +71,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.georgia_corona_data">
+  <component name="RunManager" selected="Python.execute">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="corona" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,6 +86,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/configs/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="execute" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="corona" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/execute.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -287,6 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.execute" />
         <item itemvalue="Python.georgia_corona_data" />
         <item itemvalue="Python.config" />
         <item itemvalue="Python.fb_test" />
@@ -326,6 +224,9 @@
       <workItem from="1589860969332" duration="10883000" />
       <workItem from="1589898130307" duration="856000" />
       <workItem from="1590000788377" duration="1769000" />
+      <workItem from="1590103136476" duration="1099000" />
+      <workItem from="1590104282935" duration="11818000" />
+      <workItem from="1590469507815" duration="2222000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned code, grid xpath updated">
       <created>1589350346845</created>
@@ -337,9 +238,6 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272840000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -349,65 +247,18 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-1927" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49772727" visible="true" weight="0.1930295" />
-      <window_info id="Structure" order="1" sideWeight="0.5022727" side_tool="true" weight="0.27211797" />
-      <window_info id="DB Browser" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49585634" visible="true" weight="0.403709" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49731904" weight="0.46504992" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952926" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5734665" />
-      <window_info anchor="bottom" id="Sourcery" order="9" sideWeight="0.49932975" weight="0.22253923" />
-      <window_info anchor="bottom" id="DB Execution Console" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49865952" weight="0.13980028" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50268096" side_tool="true" weight="0.46504992" />
-      <window_info anchor="bottom" id="Python Console" order="14" weight="0.32952926" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" show_stripe_button="false" weight="0.32952926" />
-      <window_info anchor="bottom" id="Messages" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32841823" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3297587" />
-    </layout>
-  </component>
   <component name="ToolsProjectConfig">
     <afterCommitToolId>Tool_External Tools_Black</afterCommitToolId>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -426,6 +277,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
@@ -433,128 +285,74 @@
     <MESSAGE value="cleaned code, grid xpath updated" />
     <option name="LAST_COMMIT_MESSAGE" value="cleaned code, grid xpath updated" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="-1387" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590467150974">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1387" y="214" key="#com.intellij.fileTypes.FileTypeChooser/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590467150974" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1590471696210">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="259" key="GridCell.Tab.0.bottom/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899646" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696210" />
+    <state width="1493" height="264" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1590471696209">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="259" key="GridCell.Tab.0.center/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899645" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696209" />
+    <state width="1493" height="264" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1590471696209">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="259" key="GridCell.Tab.0.left/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899644" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696209" />
+    <state width="1493" height="264" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1590471696210">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1477" height="259" key="GridCell.Tab.0.right/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899645" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696210" />
+    <state width="1493" height="264" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
+    <state width="1493" height="308" key="GridCell.Tab.1.bottom" timestamp="1590467590811">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="308" key="GridCell.Tab.1.bottom/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590467590811" />
+    <state width="1493" height="308" key="GridCell.Tab.1.center" timestamp="1590467590810">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="308" key="GridCell.Tab.1.center/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590467590810" />
+    <state width="1493" height="308" key="GridCell.Tab.1.left" timestamp="1590467590810">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="308" key="GridCell.Tab.1.left/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590467590810" />
+    <state width="1493" height="308" key="GridCell.Tab.1.right" timestamp="1590467590811">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="308" key="GridCell.Tab.1.right/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590467590811" />
+    <state x="-1643" y="57" key="SettingsEditor" timestamp="1590440133784">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1643" y="57" key="SettingsEditor/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590440133784" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590104401775" />
+    <state x="206" y="93" width="1237" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590103938698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="206" y="93" width="1237" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1590103938698" />
+    <state x="104" y="100" width="1335" height="624" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590470379233">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="104" y="100" width="1335" height="624" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590470379233" />
+    <state x="560" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590471684194">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="560" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471684194" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/corona$whatsapp.coverage" NAME="whatsapp Coverage Results" MODIFIED="1589148140068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/corona$georgia_corona_data.coverage" NAME="georgia_corona_data Coverage Results" MODIFIED="1590002134262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/corona$fb_test.coverage" NAME="fb_test Coverage Results" MODIFIED="1589569873670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/corona$georgia_corona_data.coverage" NAME="georgia_corona_data Coverage Results" MODIFIED="1590470861595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/corona$execute.coverage" NAME="execute Coverage Results" MODIFIED="1590470899626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/corona$config.coverage" NAME="config Coverage Results" MODIFIED="1590002001343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/configs" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/pandas/io/html.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="914" selection-start-line="914" selection-end-line="914" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filename.png" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="228" column="7" lean-forward="true" selection-start-line="228" selection-start-column="7" selection-end-line="228" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1076739541/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="352" column="4" selection-start-line="352" selection-start-column="4" selection-end-line="352" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/imagekitio/client.py" />
-    <entry file="file://$PROJECT_DIR$/tester.html" />
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/pdfkit/api.py" />
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/PIL/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1152" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/selenium/webdriver/common/action_chains.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_modules/pdf.py" />
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/corona/venv/Lib/site-packages/twilio/rest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/covid_status.csv" />
-    <entry file="file://$PROJECT_DIR$/whatsapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fb_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/pathlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="1145" column="8" selection-start-line="1145" selection-start-column="8" selection-end-line="1145" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_modules/modules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configs/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="22" column="83" lean-forward="true" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/georgia_corona_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="112" column="70" lean-forward="true" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configs/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/corona$fb_test.coverage" NAME="fb_test Coverage Results" MODIFIED="1589569873670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

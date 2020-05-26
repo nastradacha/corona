@@ -15,8 +15,12 @@ def json_reader(file_path):
 # read json file
 config = json_reader(Path.cwd() / "configs/config.json")
 
+
 # Page URL
-ga_dept_health = config["URL"]["GA_dept_health"]
+class PageUrls:
+    ga_dept_health = config["URL"]["GA_dept_health"]
+    File_bin = config["URL"]["File_bin"]
+
 
 # Chrome browser
 chrome_driver = Path.home() / (config["Driver"]["Chrome_driver"])
@@ -36,8 +40,10 @@ class Elements:
 
 
 # File paths
-class File_Path:
+class FilePath:
     covid_status_csv = Path.home() / (config["file_paths"]["covid_status_csv"])
     covid_status_html = str(Path.home() / (config["file_paths"]["covid_status_html"]))
     covid_status_pdf = str(Path.home() / (config["file_paths"]["covid_status_pdf"]))
-    covid_death_detail_csv = Path.home() / (config["file_paths"]["covid_death_detail_csv"])
+    covid_death_detail_csv = Path.home() / (
+        config["file_paths"]["covid_death_detail_csv"]
+    )
