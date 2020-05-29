@@ -21,6 +21,7 @@
         "covid_status_csv": "OneDrive/Desktop/corona_data/covid_status.csv",
         "covid_status_html": "OneDrive/Desktop/corona_data/covid_status.html",
         "covid_status_pdf": "OneDrive/Desktop/corona_data/covid_status.pdf",
-        "covid_death_detail_csv": "OneDrive/Desktop/corona_data/covid_death_detail.csv"
+        "covid_death_detail_csv": "OneDrive/Desktop/corona_data/covid_death_detail.csv",
+        "materialize_css": "OneDrive/Desktop/corona_data/css/materialize.min.css"
     }
 }

@@ -47,3 +47,4 @@ class FilePath:
     covid_death_detail_csv = Path.home() / (
         config["file_paths"]["covid_death_detail_csv"]
     )
+    materialize_css = Path.home() / (config["file_paths"]["materialize_css"])

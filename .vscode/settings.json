@@ -1,3 +1,4 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "sourcery.token": "user_Cie-pP3mLvh-NhJ1AHwzoSIniEg4XuXx3Ft34Xa86q83cWSiuJuQfMN-AvY"
 }

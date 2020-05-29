@@ -87,7 +87,7 @@ class GeorgiaCovid:
     <html>
         <head>
             <title> Georgia COVID-19 Updated Data</title>
-            <link rel="stylesheet" href='C://Users//Nastracha//OneDrive//Desktop//corona_data//css//materialize.min.css'>
+            <link rel="stylesheet" href='{FilePath.materialize_css}'>
         </head>
         {table}
     </html>"""
@@ -135,7 +135,9 @@ class GeorgiaCovid:
     def run(self):
         self.get_covid_status()
         self.save_covid_status_to_csv(self.df, FilePath.covid_status_csv)
-        self.get_deaths_in_georgia().to_csv(FilePath.covid_death_detail_csv, index=False)
+        self.get_deaths_in_georgia().to_csv(
+            FilePath.covid_death_detail_csv, index=False
+        )
         self.covid_status_to_html(FilePath.covid_status_html)
         self.convert_html_to_pdf(FilePath.covid_status_pdf, FilePath.covid_status_html)
         self.convert_pdf_to_url(FilePath.covid_status_pdf)

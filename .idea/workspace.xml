@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc50abb7-d086-4e94-8de7-10cada9a67f8" name="Default Changelist" comment="">
+    <list default="true" id="cc50abb7-d086-4e94-8de7-10cada9a67f8" name="Default Changelist" comment="cleaned code, grid xpath updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/georgia_corona_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/georgia_corona_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_modules/modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_modules/modules.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +241,7 @@
       <workItem from="1590000788377" duration="1769000" />
       <workItem from="1590103136476" duration="1099000" />
       <workItem from="1590104282935" duration="11818000" />
-      <workItem from="1590469507815" duration="2222000" />
+      <workItem from="1590469507815" duration="3416000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned code, grid xpath updated">
       <created>1589350346845</created>
@@ -235,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589350346845</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cleaned code, grid xpath updated">
+      <created>1590471929258</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590471929258</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -290,28 +312,32 @@
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
     <state x="-1387" y="214" key="#com.intellij.fileTypes.FileTypeChooser/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590467150974" />
-    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1590471696210">
+    <state x="393" y="0" width="996" height="824" key="CommitChangelistDialog2" timestamp="1590471928024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1477" height="259" key="GridCell.Tab.0.bottom/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899646" />
+    <state x="393" y="0" width="996" height="824" key="CommitChangelistDialog2/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471928024" />
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom" timestamp="1590473089424">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="259" key="GridCell.Tab.0.bottom/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590473089424" />
     <state width="1493" height="259" key="GridCell.Tab.0.bottom/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696210" />
     <state width="1493" height="264" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
-    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1590471696209">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center" timestamp="1590473089424">
+      <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1477" height="259" key="GridCell.Tab.0.center/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899645" />
+    <state width="1493" height="259" key="GridCell.Tab.0.center/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590473089424" />
     <state width="1493" height="259" key="GridCell.Tab.0.center/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696209" />
     <state width="1493" height="264" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
-    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1590471696209">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left" timestamp="1590473089422">
+      <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1477" height="259" key="GridCell.Tab.0.left/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899644" />
+    <state width="1493" height="259" key="GridCell.Tab.0.left/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590473089422" />
     <state width="1493" height="259" key="GridCell.Tab.0.left/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696209" />
     <state width="1493" height="264" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
-    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1590471696210">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right" timestamp="1590473089424">
+      <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1477" height="259" key="GridCell.Tab.0.right/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590470899645" />
+    <state width="1493" height="259" key="GridCell.Tab.0.right/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590473089424" />
     <state width="1493" height="259" key="GridCell.Tab.0.right/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590471696210" />
     <state width="1493" height="264" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590104239937" />
     <state width="1493" height="308" key="GridCell.Tab.1.bottom" timestamp="1590467590811">
@@ -335,6 +361,10 @@
     </state>
     <state x="-1643" y="57" key="SettingsEditor/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1590440133784" />
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590104401775" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1590472073817">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/-3840.231.1536.824/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1590472073817" />
     <state x="206" y="93" width="1237" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590103938698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -351,7 +381,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/corona$whatsapp.coverage" NAME="whatsapp Coverage Results" MODIFIED="1589148140068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/corona$georgia_corona_data.coverage" NAME="georgia_corona_data Coverage Results" MODIFIED="1590470861595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/corona$execute.coverage" NAME="execute Coverage Results" MODIFIED="1590470899626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/corona$execute.coverage" NAME="execute Coverage Results" MODIFIED="1590472879472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/corona$config.coverage" NAME="config Coverage Results" MODIFIED="1590002001343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/configs" />
     <SUITE FILE_PATH="coverage/corona$fb_test.coverage" NAME="fb_test Coverage Results" MODIFIED="1589569873670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
